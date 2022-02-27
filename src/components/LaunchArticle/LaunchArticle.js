@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './style.scss';
 
 const LaunchArticle = ({ name, link, imgUrl, description }) => (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex">
         <img srcSet={`${imgUrl}`} alt={name} className="article__image"/>
             <Link to={{ pathname: link }} className="article" target="_blank" rel="noopener">
                 <div className="article__header">
